@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#title {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.one {
+    border: 3px solid #000;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-around;
+}
+
+.massage {
+    text-align: right;
+    margin: 30px;
+}
+
+
+.on1,
+.on2,
+.on3,
+.on4,
+.on5,
+.on6,
+.on7,
+.on8,
+.on9,
+.on10 {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: white;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 10px;
+    width: 75px;
+    height: 40px;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+.line {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+    border: 3px solid #000;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.line a {
+    color: #000;
+    font-size: larger;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.line a:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: #000;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.menu-icon {
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* القائمة المنبثقة */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+/* تأثير عند فتح القائمة */
+.menu-icon.active .menu-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active .menu-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .menu-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.title{
+    text-align: center;
+}
+.der{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 60px;
+}
